@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="4060416301" file="C:\Users\abagu\Documents\Typhoon_v01\App\Typhoon.prj" location="C:\Users\abagu\Documents\Typhoon_v01\App" name="Typhoon" preferred-package-location="C:\Users\abagu\Documents\Typhoon_v01\App\Typhoon\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="4060416301" file="C:\Users\abagu\Documents\Typhoon\App\Typhoon.prj" location="C:\Users\abagu\Documents\Typhoon\App" name="Typhoon" preferred-package-location="C:\Users\abagu\Documents\Typhoon_v01\App\Typhoon\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>Typhoon</param.appname>
     <param.icon>${PROJECT_ROOT}\Typhoon_resources\icon.ico</param.icon>
     <param.icons>
@@ -93,27 +93,26 @@ Happy foiling!</param.install.notes>
       <file>${PROJECT_ROOT}\geometry_edit3.mlapp</file>
       <file>${PROJECT_ROOT}\state_def2.mlapp</file>
       <file>${PROJECT_ROOT}\state_edit.mlapp</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\calc_equi_07072020.txt</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\coeff_create3.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\config.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\EigenVisual.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\equilibrium1.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\fLattice_setup2.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\geometryplot_app.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\initialize.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\lgwt.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\LongStab1.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\setboundary5.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\solver10.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\solverloop6.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\tdisp.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\terror.m</file>
-      <file>C:\Users\abagu\Documents\Typhoon_v01\wave.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\coeff_create3.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\config.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\EigenVisual.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\equilibrium1.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\fLattice_setup2.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\geometryplot_app.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\initialize.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\lgwt.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\LongStab1.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\setboundary5.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\solver10.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\solverloop6.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\tdisp.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\terror.m</file>
+      <file>C:\Users\abagu\Documents\Typhoon\wave.m</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\Typhoon\for_testing" name="readme.txt" optional="true">C:\Users\abagu\Documents\Typhoon_v01\App\Typhoon\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\Typhoon\for_testing" name="splash.png" optional="false">C:\Users\abagu\Documents\Typhoon_v01\App\Typhoon\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\Typhoon\for_testing" name="Typhoon.exe" optional="false">C:\Users\abagu\Documents\Typhoon_v01\App\Typhoon\for_testing\Typhoon.exe</file>
+      <file location="${PROJECT_ROOT}\Typhoon\for_testing" name="splash.png" optional="false">C:\Users\abagu\Documents\Typhoon\App\Typhoon\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\Typhoon\for_testing" name="Typhoon.exe" optional="false">C:\Users\abagu\Documents\Typhoon\App\Typhoon\for_testing\Typhoon.exe</file>
+      <file location="${PROJECT_ROOT}\Typhoon\for_testing" name="readme.txt" optional="true">C:\Users\abagu\Documents\Typhoon\App\Typhoon\for_testing\readme.txt</file>
     </build-deliverables>
     <workflow />
     <matlab>
