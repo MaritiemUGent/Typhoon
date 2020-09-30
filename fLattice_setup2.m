@@ -1827,9 +1827,11 @@ switch TYPE
         m=fix(foil/1000);	%gives first NACA-4 number
         lemma=foil-m*1000;
         p=fix(lemma/100);	%gives second NACA-4 number
-   
-        p=p/10;
-        m=m/100;
+		
+		dir = sign(m);
+		
+        p=abs(p/10);
+        m=abs(m/100);
    
         
    xa=0:0.01:1;     
@@ -1838,9 +1840,9 @@ switch TYPE
    
    for i=1:101
         if xa(i)<p
-        a(i)=(2*m/(p^2)*(p-xa(i)));  
+        a(i)=dir*(2*m/(p^2)*(p-xa(i)));  
         else
-        a(i)=2*m/((1-p)^2)*(p-xa(i));  
+        a(i)=dir*2*m/((1-p)^2)*(p-xa(i));  
         end
    end
    angle=atan(a);
@@ -2001,12 +2003,6 @@ for i=1:ny+1
 	if curved
 		
 		
-
- 
-     	
-
-		
-		
 		if i>1
 			perc_y=percent_cy(i)-percent_cy(i-1);
 		else
@@ -2037,11 +2033,11 @@ for i=1:ny+1
 		
 		end
 		
-		angle_a=b/radius * perc_y;
+		angle_a=b/abs(radius) * perc_y;
 		
 		angle_b= angle_a_old+(pi/2-(pi - angle_a)/2);
 		
-		length = radius*sin((angle_a)/2)*2 ;
+		length = abs(radius)*sin((angle_a)/2)*2 ;
 	
 		angle_b_old = angle_b;
 		angle_a_old = angle_a_old+angle_a;

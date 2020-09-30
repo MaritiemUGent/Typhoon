@@ -64,7 +64,7 @@ FORCE(k,1,:)=results00.FORCE-[0; 0; geo.mass*9.81];
 MOMENTS(k,1,:)=results00.MOMENTS+state.Ms;
 
 cd(settings.odir)
-	fileID = fopen('calc_equi_07072020.txt','a');
+	fileID = fopen('calc_statequi.txt','a');
 	fprintf(fileID, '%i \t %i \t %i \t %i \t \n', state.ELA, state.theta, ...
 		FORCE(k,1,3),MOMENTS(k,1,2));
 	fclose(fileID);
@@ -82,7 +82,7 @@ FORCE(k,2,:)=results01.FORCE-[0; 0; geo.mass*9.81];
 MOMENTS(k,2,:)=results01.MOMENTS+state.Ms;
 
 cd(settings.odir)
-	fileID = fopen('calc_equi_07072020.txt','a');
+	fileID = fopen('calc_statequi.txt','a');
 	fprintf(fileID, '%i \t %i \t %i \t %i \t \n', state.ELA, state.theta, ...
 		FORCE(k,2,3),MOMENTS(k,2,2));
 	fclose(fileID);
@@ -102,7 +102,7 @@ FORCE(k,3,:)=results02.FORCE-[0; 0; geo.mass*9.81];
 MOMENTS(k,3,:)=results02.MOMENTS+state.Ms;
 
 cd(settings.odir)
-	fileID = fopen('calc_equi_07072020.txt','a');
+	fileID = fopen('calc_statequi.txt','a');
 	fprintf(fileID, '%i \t %i \t %i \t %i \t \n', state.ELA, state.theta, ...
 		FORCE(k,3,3),MOMENTS(k,3,2));
 	fclose(fileID);
@@ -134,7 +134,7 @@ end
 inc=1;
 
 cd(settings.odir)
-fileID = fopen('calc_equi_07072020.txt','a');
+fileID = fopen('calc_statequi.txt','a');
 fprintf(fileID, 'update : %i \t %i \t %i \t %i \t %i \t %i \n', state.ELA, state.theta, ...
 	FORCE(k,1,3),MOMENTS(k,1,2), A(k,1), A(k,2));
 fclose(fileID);
@@ -194,7 +194,7 @@ while (k<100 && inc>1.8e-07)
 			inc = abs(A(k,1))*abs(A(k,2));
 			
 			cd(settings.odir)
-			fileID = fopen('calc_equi_07072020.txt','a');
+			fileID = fopen('calc_statequi.txt','a');
 			fprintf(fileID, '%i \t %i \t %i \t %i \t %i \t %i \n', state.ELA, state.theta, ...
 				FORCE(k,1,3),MOMENTS(k,1,2), A(k,1), A(k,2));
 			fclose(fileID);
@@ -247,7 +247,7 @@ while (k<100 && inc>1.8e-07)
 				inc = abs(A(k,1))*abs(A(k,2));
 				
 				cd(settings.odir)
-				fileID = fopen('calc_equi_07072020.txt','a');
+				fileID = fopen('calc_statequi.txt','a');
 				fprintf(fileID, '%i \t %i \t %i \t %i \t %i \t %i \n', state.ELA, state.theta, ...
 					FORCE(k,1,3),MOMENTS(k,1,2), A(k,1), A(k,2));
 				fclose(fileID);
@@ -300,7 +300,7 @@ while (k<100 && inc>1.8e-07)
 					inc = abs(A(k,1))*abs(A(k,2));
 					
 					cd(settings.odir)
-					fileID = fopen('calc_equi_07072020.txt','a');
+					fileID = fopen('calc_statequi.txt','a');
 					fprintf(fileID, '%i \t %i \t %i \t %i \t %i \t %i \n', state.ELA, state.theta, ...
 						FORCE(k,1,3),MOMENTS(k,1,2), A(k,1), A(k,2));
 					fclose(fileID);
@@ -323,7 +323,7 @@ while (k<100 && inc>1.8e-07)
 					MOMENTS(k,2,:)=results01.MOMENTS+state.Ms;
 					
 					cd(settings.odir)
-					fileID = fopen('calc_equi_07072020.txt','a');
+					fileID = fopen('calc_statequi.txt','a');
 					fprintf(fileID, '%i \t %i \t %i \t %i \t \n', state.ELA, state.theta, ...
 						FORCE(k,2,3),MOMENTS(k,2,2));
 					fclose(fileID);
@@ -346,7 +346,7 @@ while (k<100 && inc>1.8e-07)
 					MOMENTS(k,1,:) = FORCE(k-1,1,:);
 					
 					cd(settings.odir)
-					fileID = fopen('calc_equi_07072020.txt','a');
+					fileID = fopen('calc_statequi.txt','a');
 					fprintf(fileID, '%i \t %i \t %i \t %i \t \n', state.ELA, state.theta, ...
 						FORCE(k,3,3),MOMENTS(k,3,2));
 					fclose(fileID);
@@ -378,7 +378,7 @@ while (k<100 && inc>1.8e-07)
 					inc=1;
 					
 					cd(settings.odir)
-					fileID = fopen('calc_equi_07072020.txt','a');
+					fileID = fopen('calc_statequi.txt','a');
 					fprintf(fileID, 'update : %i \t %i \t %i \t %i \t %i \t %i \n', state.ELA, state.theta, ...
 						FORCE(k,1,3),MOMENTS(k,1,2), A(k,1), A(k,2));
 					fclose(fileID);
@@ -444,7 +444,7 @@ while (k<100 && inc>1.8e-07)
 				inc = abs(A(k,1))*abs(A(k,2));
 				
 				cd(settings.odir)
-				fileID = fopen('calc_equi_07072020.txt','a');
+				fileID = fopen('calc_statequi.txt','a');
 				fprintf(fileID, '%i \t %i \t %i \t %i \t %i \t %i \n', state.ELA, state.theta, ...
 					FORCE(k,1,3),MOMENTS(k,1,2), A(k,1), A(k,2));
 				fclose(fileID);
@@ -500,7 +500,7 @@ while (k<100 && inc>1.8e-07)
 				inc = abs(A(k,1))*abs(A(k,2));
 				
 				cd(settings.odir)
-				fileID = fopen('calc_equi_07072020.txt','a');
+				fileID = fopen('calc_statequi.txt','a');
 				fprintf(fileID, '%i \t %i \t %i \t %i \t %i \t %i \n', state.ELA, state.theta, ...
 					FORCE(k,1,3),MOMENTS(k,1,2), A(k,1), A(k,2));
 				fclose(fileID);
@@ -526,7 +526,7 @@ results.stat_eq = [state.theta, state.ELA]
 
 
 
-save('calc_equi');
+%save('calc_equi');
 
 end
 

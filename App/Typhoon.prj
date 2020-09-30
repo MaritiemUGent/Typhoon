@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="2739990046" file="C:\Users\abagu\Documents\Typhoon_v01\App\Typhoon.prj" location="C:\Users\abagu\Documents\Typhoon_v01\App" name="Typhoon" preferred-package-location="C:\Users\abagu\Documents\Typhoon_v01\App\Typhoon\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="4060416301" file="C:\Users\abagu\Documents\Typhoon_v01\App\Typhoon.prj" location="C:\Users\abagu\Documents\Typhoon_v01\App" name="Typhoon" preferred-package-location="C:\Users\abagu\Documents\Typhoon_v01\App\Typhoon\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>Typhoon</param.appname>
     <param.icon>${PROJECT_ROOT}\Typhoon_resources\icon.ico</param.icon>
     <param.icons>
@@ -8,7 +8,7 @@
       <file>${PROJECT_ROOT}\Typhoon_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\Typhoon_resources\icon_16.png</file>
     </param.icons>
-    <param.version>2.0</param.version>
+    <param.version>1.0</param.version>
     <param.authnamewatermark>Alec Bague; Evert Lataire</param.authnamewatermark>
     <param.email>evert.lataire@ugent.be</param.email>
     <param.company>Ghent University</param.company>
@@ -20,7 +20,7 @@ Please make sure when running Typhoon that you run the software as administrator
     <param.guid />
     <param.installpath.string>\Ghent University\Typhoon\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
-    <param.logo />
+    <param.logo>C:\Users\abagu\OneDrive - ugentbe\Bureaublad\ugent.png</param.logo>
     <param.install.notes>Please make sure when running Typhoon that you run the software as ADMINISTRATOR to avoid any issues when saving or writing files. 
 
 Furthermore we also stress that the DESKTOP SHORTCUT created by the Installer DOES NOT WORK and you should work in the application folder where the following folders are present: output; hydrofoil; condition.
@@ -49,10 +49,10 @@ Happy foiling!</param.install.notes>
     <param.example />
     <param.help.text />
     <unset>
+      <param.version />
       <param.guid />
       <param.installpath.string />
       <param.installpath.combo />
-      <param.logo />
       <param.target.install.notes />
       <param.intermediate />
       <param.files.only />
@@ -81,10 +81,12 @@ Happy foiling!</param.install.notes>
     </fileset.main>
     <fileset.resources />
     <fileset.package>
-      <file>C:\Users\abagu\Documents\Typhoon_lite\condition</file>
-      <file>C:\Users\abagu\Documents\Typhoon_lite\hydrofoil</file>
-      <file>C:\Users\abagu\Documents\Typhoon_lite\output</file>
+      <file>${PROJECT_ROOT}\Typhoon_resources\icon.ico</file>
+      <file>C:\Users\abagu\Documents\Typhoon_v01\condition</file>
       <file>C:\Users\abagu\Documents\Typhoon_v01\GNU GENERAL PUBLIC LICENSE.txt</file>
+      <file>C:\Users\abagu\Documents\Typhoon_v01\hydrofoil</file>
+      <file>C:\Users\abagu\Documents\Typhoon_v01\output</file>
+      <file>C:\Users\abagu\Documents\Typhoon_v01\papers</file>
     </fileset.package>
     <fileset.depfun>
       <file>${PROJECT_ROOT}\geometry_def3.mlapp</file>
